@@ -1,0 +1,10 @@
+// I have imported a java.io.Console for you, it is named console. 
+String firstExample = "hello";
+String secondExample = "hello";
+String thirdExample = "HELLO";
+if(firstExample.equals(secondExample)){
+console.printf("first is equal to second");
+}
+if(firstExample.equalsIgnoreCase(thirdExample)){
+console.printf("first and third are the same ignoring case");
+}
