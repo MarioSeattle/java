@@ -1,0 +1,32 @@
+import java.io.Console;
+ 
+public class TreeStory {
+    
+    public static void main(String[] args) {
+        Console console = System.console();
+        /*  Some terms:
+            noun - Person, place or thing
+            verb - An action
+            adjective - A description used to modify or describe a noun
+            Enter your amazing code here!
+        */
+      //__name__ is an __adjective__ __noum__. There are always __advert__ __verb__.
+      String ageAsString = console.readLine("How old are you ?  ");
+      int age = Integer.parseInt(ageAsString);
+      if (age < 13) {
+      //insert exit code
+        console.printf("Sorry you must be 13.\n");
+        System.exit(0);
+      
+      }
+      String name = console.readLine("Enter your name:  ");
+      String adjetive = console.readLine("Enter an adjetive:  ");
+      String noun = console.readLine("Enter a noum:  ");
+      if (noun.equalsIgnoreCase("dork")) {
+      console.printf("This language is not good! exit \n\n");
+        System.exit(0);
+      }
+    
+    }
+    
+}
