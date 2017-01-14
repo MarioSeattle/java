@@ -1,0 +1,10 @@
+//first task
+String response = console.readLine("Do you understand do while loops");
+//second task
+String  response = " ";
+do {
+response = console.readLine("Do you understand do while loops?"); 
+}while(response.equalsIgnoreCase("no"));
+//Third Task
+console.printf ("Because you said %s, you passed the test!");
+
