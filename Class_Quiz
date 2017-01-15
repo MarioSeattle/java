@@ -1,0 +1,4 @@
+class GoKart {
+String color = "red";
+
+}
