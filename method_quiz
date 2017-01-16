@@ -1,0 +1,9 @@
+//create a method to access the color
+
+class GoKart {
+  private String color = "red";
+  
+  public String getColor(){
+  return color;
+  }
+}
