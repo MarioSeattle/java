@@ -1,0 +1,50 @@
+//First, define a public constructor that expects a String argument named color. 
+//(Don't worry about adding any code inside the constructor just yet, we'll do that next.)
+
+class GoKart {
+  private String color;
+  
+  public color (String color){
+  
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+}
+
+//Now in the body of your constructor, 
+//set the private field color to the value of the color argument passed into the constructor. (Make sure you are setting the right color*)
+
+class GoKart {
+  private String color;
+  
+  public color (String color){
+    this.color = color;
+  
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+}
+
+
+//Finally, since the color is being set in the constructor now, remove the initialization from the field definition. 
+//Just leave it declared, but not initialized to "red".
+
+class GoKart {
+  private String color;
+  
+  public color (String color){
+    this.color = color;
+  
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+}
