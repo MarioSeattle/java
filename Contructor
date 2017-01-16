@@ -1,0 +1,30 @@
+//pez dispenser can not be created without specifying the character name and after created we haven't exposed any way to change it !
+
+//PezDispenser.java
+class PezDispenser {
+private String characterName;
+  
+public PezDispenser(String characterName){
+this.characterName = characterName;
+  
+}  
+public String getCharacterName(){
+  return characterName;
+}
+}
+
+
+//Example.java
+
+public class Example {
+ 
+  public static void main(String[] args) {
+    // Your amazing code goes here...
+    System.out.println("We are making a new Pez dispenser");
+    PezDispenser dispenser  = new PezDispenser ("Donatello");
+    System.out.printf("The dispenser is %s %n",
+                     dispenser.getCharacterName()
+                     );
+  }
+
+}
