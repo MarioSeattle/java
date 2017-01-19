@@ -22,12 +22,12 @@ public class Exercise1 {
         //if less than 3 let the user know and exit
     if ( x <= 3 )
     	{
-    	System.out.println("can not work in groups with only " +x+ "students");
+    	System.out.println("can not work in groups with only " + x + "students");
     	System.exit(0);
     	}
     //If more than 3 ask the user to retype integer
     else {
-    	System.out.println("With " +x+ " " + "students");
+    	System.out.println("With " + x + " " + "students");
     	}
     //Here the program will run the algorithm and display the results
   
@@ -36,7 +36,7 @@ public class Exercise1 {
     	a = x/4;
     	b = 0;
     	System.out.println("the optimal seating arrangement should have " +"\n" 
-    	+a+ " " + " tables for 4," + " "  +b+  " " + "tables for 3");
+    	+ a + " " + " tables for 4," + " "  + b +  " " + "tables for 3");
     	}
   
     else if ( x%4 == 1 )
@@ -44,7 +44,7 @@ public class Exercise1 {
     	a = x/4;
     	b = 3;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
-    	+a+ " " + "tables for 4," + " " +b+ " " +  "tables for 3"); 
+    	+ a + " " + "tables for 4," + " " + b + " " +  "tables for 3"); 
     	}
   
     else if ( x%4 == 2 )
@@ -52,7 +52,7 @@ public class Exercise1 {
     	a = ( x/4 ) - 2;
     	b = 3;
     	System.out.println("the optimal seating arrangement should have " + "\n"
-    	+a+ " " + "tables for 4," + " " +b+ " " +  "tables for 3");
+    	+ a + " " + "tables for 4," + " " + b + " " +  "tables for 3");
     	}
     
     else if ( x%4 == 3 )
@@ -60,7 +60,7 @@ public class Exercise1 {
     	a = ( x/4 );
     	b = 1;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
-    	+a+ " " +  "tables for 4," +b+ "tables for 3");}
+    	+ a + " " +  "tables for 4," + b + "tables for 3");}
     
   
  			}
