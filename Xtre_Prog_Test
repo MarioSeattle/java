@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class Xtre_Prog1 {
+
+	/*
+	 * Programming Assignment
+	 * Mario Gomez
+	 * This is a program that takes as input an integer number
+	 * of students and outputs the number of tables
+	 * with 4 students, and the number of tables with 3 students.
+	 * */
+
+ public static void main(String[] args) {
+  // TODO Auto-generated method stub
+	 
+  Scanner sc = new Scanner (System.in);
+  System.out.println("How many students are in the class?  ");
+  
+  	int x = sc.nextInt();
+  		int a;
+        int b;
+        
+    if (x <= 3){
+    	System.out.println("can not work in groups with only " +x+ "students");
+    	System.exit(0);}
+    
+    else {
+    	System.out.println("With " +x+ " " + "students");}
+  
+    if (x%4 == 0){
+    	a = x/4;
+    	b = 0;
+    	System.out.println("the optimal seating arrangement should have " +"\n" 
+    	+a+ " tables for 4," + " "  +b+  " " + "tables for 3");}
+  
+    else if (x%4 == 1){
+    	a = x/4;
+    	b = 3;
+    	System.out.println("the optimal seating arrangement should have " + "\n" 
+    	+a+ "tables for 4," + " " +b+ " " +  "tables for 3"); }
+  
+    else if (x%4 == 2){
+    	a = (x/4) - 2;
+    	b = 3;
+    	System.out.println("the optimal seating arrangement should have " + "\n"
+    	+a+ "tables for 4," + " " +b+ " " +  "tables for 3");
+    }
+    
+    else if (x%4 == 3){
+    	a = (x/4);
+    	b = 1;
+    	System.out.println("the optimal seating arrangement should have " + "\n" 
+    	+a+ "tables for 4," +b+ "tables for 3");}
+    
+  
+ 		}
+ 
+			}
