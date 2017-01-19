@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Exercise1 {
+public class Xtre_Prog1 {
 
 	/*
 	 * Programming Assignment
@@ -16,48 +16,48 @@ public class Exercise1 {
   Scanner sc = new Scanner (System.in);
   System.out.println("How many students are in the class?  ");
   
-  	int x = sc.nextInt();
+  	int students = sc.nextInt();
   		int a;
         int b;
         //if less than 3 let the user know and exit
-    if ( x <= 3 )
+    if ( students <= 3 )
     	{
-    	System.out.println("can not work in groups with only " + x + "students");
+    	System.out.println("can not work in groups with only " + students + "students");
     	System.exit(0);
     	}
-    //If more than 3 ask the user to retype integer
+    //If more than 3 ask the user to retype integer 
     else {
-    	System.out.println("With " + x + " " + "students");
+    	System.out.println("With " + students + " " + "students");
     	}
     //Here the program will run the algorithm and display the results
   
-    if ( x%4 == 0 )
+    if ( students%4 == 0 )
     	{
-    	a = x/4;
+    	a = students/4;
     	b = 0;
     	System.out.println("the optimal seating arrangement should have " +"\n" 
     	+ a + " " + " tables for 4," + " "  + b +  " " + "tables for 3");
     	}
   
-    else if ( x%4 == 1 )
+    else if ( students%4 == 1 )
     	{
-    	a = x/4;
+    	a = students/4;
     	b = 3;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
     	+ a + " " + "tables for 4," + " " + b + " " +  "tables for 3"); 
     	}
   
-    else if ( x%4 == 2 )
+    else if ( students%4 == 2 )
     	{
-    	a = ( x/4 ) - 2;
+    	a = ( students/4 ) - 2;
     	b = 3;
     	System.out.println("the optimal seating arrangement should have " + "\n"
     	+ a + " " + "tables for 4," + " " + b + " " +  "tables for 3");
     	}
     
-    else if ( x%4 == 3 )
+    else if ( students%4 == 3 )
     	{
-    	a = ( x/4 );
+    	a = ( students/4 );
     	b = 1;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
     	+ a + " " +  "tables for 4," + b + "tables for 3");}
