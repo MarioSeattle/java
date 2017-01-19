@@ -19,16 +19,17 @@ public class Exercise1 {
   	int x = sc.nextInt();
   		int a;
         int b;
-        
+        //if less than 3 let the user know and exit
     if ( x <= 3 )
     	{
     	System.out.println("can not work in groups with only " +x+ "students");
     	System.exit(0);
     	}
-    
+    //If more than 3 ask the user to retype integer
     else {
     	System.out.println("With " +x+ " " + "students");
     	}
+    //Here the program will run the algorithm and display the results
   
     if ( x%4 == 0 )
     	{
