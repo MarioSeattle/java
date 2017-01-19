@@ -4,6 +4,7 @@ public class Xtre_Prog1 {
 	/*
 	 * Programming Assignment
 	 * Mario Gomez
+	 * fuyuan geng
 	 * This is a program that takes as input an integer number
 	 * of students and outputs the number of tables
 	 * with 4 students, and the number of tables with 3 students.
@@ -30,26 +31,26 @@ public class Xtre_Prog1 {
     	a = x/4;
     	b = 0;
     	System.out.println("the optimal seating arrangement should have " +"\n" 
-    	+a+ " tables for 4," + " "  +b+  " " + "tables for 3");}
+    	+a+ " " + " tables for 4," + " "  +b+  " " + "tables for 3");}
   
     else if (x%4 == 1){
     	a = x/4;
     	b = 3;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
-    	+a+ "tables for 4," + " " +b+ " " +  "tables for 3"); }
+    	+a+ " " + "tables for 4," + " " +b+ " " +  "tables for 3"); }
   
     else if (x%4 == 2){
     	a = (x/4) - 2;
     	b = 3;
     	System.out.println("the optimal seating arrangement should have " + "\n"
-    	+a+ "tables for 4," + " " +b+ " " +  "tables for 3");
+    	+a+ " " + "tables for 4," + " " +b+ " " +  "tables for 3");
     }
     
     else if (x%4 == 3){
     	a = (x/4);
     	b = 1;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
-    	+a+ "tables for 4," +b+ "tables for 3");}
+    	+a+ " " +  "tables for 4," +b+ "tables for 3");}
     
   
  		}
