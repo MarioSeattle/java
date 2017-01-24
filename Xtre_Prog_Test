@@ -61,6 +61,8 @@ public class Xtre_Prog1 {
     	b = 1;
     	System.out.println("the optimal seating arrangement should have " + "\n" 
     	+ a + " " +  "tables for 4," + b + "tables for 3");}
+	
+	 sc.close();
     
   
  			}
