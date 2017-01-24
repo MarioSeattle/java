@@ -22,7 +22,7 @@ public class Xtre_Prog1 {
         //if less than 3 let the user know and exit
     if ( students <= 3 )
     	{
-    	System.out.println("can not work in groups with only " + students + "students");
+    	System.out.println("can not work in groups with only " + students + " " + "students");
     	System.exit(0);
     	}
     //If more than 3 ask the user to retype integer 
