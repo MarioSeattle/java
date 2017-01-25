@@ -1,31 +1,11 @@
- //importas tu clase scanner
-import java.util.Scanner;
-
-	public class While {
-
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-			
-			String respuesta;
-
-			//instanciamos la clase escanner para poder leer
-			Scanner scanner = new Scanner(System.in);
-			
-			//mandamos un mensaje al usuario
-			System.out.println("Are there any questions?");
-			
-			//leemos la respuesta
-			respuesta = scanner.nextLine();
-			System.out.println();
-			while (respuesta.equalsIgnoreCase("yes")) {
-				System.out.println("What is your question?  ");
-				
-				//leemos la respuesta
-				String question = scanner.nextLine();
-				System.out.printf("I do not understand:  %s", question);
-				
-			}
-			 scanner.close();
-		}
-
+class While{
+    public static void main(String args[]){
+    	
+         int i=10;
+         
+         while(i>1){
+              System.out.println(i);
+              i--;
+         }
+    }
 }
