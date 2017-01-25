@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class Dunk_Pool_While {
+
+	public Dunk_Pool_While() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		Random skill = new Random();
+		
+		boolean isDunked = false;
+		
+	    int ballsThrown = 0;
+	    
+	    	while (!isDunked && ballsThrown <= 3) 
+	    	{
+	    		System.out.printf("Try #%d ...%n", ballsThrown + 1);
+	    		isDunked = skill.nextBoolean();
+	    		ballsThrown++;
+	    	}
+	    
+	    	if (isDunked) 
+	    	{
+	    		System.out.printf("Air punch!!!!%n");
+	    	} 
+	    	else 
+	    	{
+	    		System.out.printf("Boo!!!!%n");
+	    	}
+	    	
+	    		scanner.close();
+	}
+	   
+}
+
+
+
+
