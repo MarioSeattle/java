@@ -1,0 +1,24 @@
+public class Array_Jacksons {
+
+	public Array_Jacksons() 
+	{// TODO Auto-generated constructor stub
+		
+	}
+
+	public static void main(String[] args) 
+	{// TODO Auto-generated method stub
+		
+	    String[] jacksons = {"Michael", "Jackie", "Tito", 
+	                         "Jermaine", "Marlon", "Randy"};
+	    
+	    System.out.printf("The Jackson 5 are: %n");
+	    for (int i = 0; i < jacksons.length; i++) 
+	    {
+	      String jackson = jacksons[i];
+	      System.out.printf("%s Jackson %n", jackson);
+	    }
+
+	}
+
+}
+
