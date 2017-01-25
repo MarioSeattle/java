@@ -1,0 +1,18 @@
+
+public class For_While {
+
+	public For_While() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for (int i = 99; i > 0; i --){
+			System.out.printf("%d bottles of milk on the wall ... %n", i);
+		}
+		}
+
+	}
+
+
