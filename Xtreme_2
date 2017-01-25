@@ -1,0 +1,58 @@
+public class Xtreme_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	if (args.length < 2){
+		System.out.println("You need to pass two parameters");
+		
+
+	}	
+	else {
+	
+	int table = Integer.parseInt(args[0]);
+	int guest = Integer.parseInt(args[1]);
+	
+	if (table == guest)
+	{
+		System.out.println("There is one table needed");
+	} 
+
+	else if (guest < table)	{
+	
+			if (table - 1 > guest ) 
+			{
+				System.out.println("There is an error");
+
+			}else 
+			{
+				System.out.println("There is one table needed");
+
+			}
+		
+		} else 
+			{ 
+			int numTable = (guest/table);
+			int diference = (guest%table);
+				if ((diference) == 0 )
+				{
+					System.out.println("There are: " + guest / table + " tables");
+
+				}else if(diference < (table - 1))
+				{
+					System.out.println("This won't work");
+
+				}else  
+				{
+					System.out.println("There are: " + (numTable + 1) + " tables");
+
+				}
+			
+		
+			}
+	
+	}// end else 
+	
+	} // end main
+
+} // end class
