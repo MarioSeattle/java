@@ -1,0 +1,80 @@
+/*
+CSC142 Group Programming Assignment by Ethan G. and Mario G. 
+
+
+This program takes a table size (seats to a table) and amount of people as inputs.
+Then it outputs how many tables of the maximum table size and the maximum table size minus one there will be.
+The solution will only allow tables of the two sizes or it will print out a message saying that it can't calculate that
+
+*/
+import java.util.*;
+
+public class GOMEZALVAREZ_MARIO_S_GUTTMAN_ETHAN_H {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Declaring scanner to receive inputs
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		//Declaring Variables the inputs will be assigned as and other variables used in the program
+		
+		int maxTableSize, lowerTableSize, people, j = 0, k, check ; 
+		boolean found = false;
+		
+		//Asking for inputs and assigning variables values from them
+		System.out.println("What number of people are attending the wedding?");
+		people = scanner.nextInt();
+		
+		System.out.println("How many can each table hold?");
+		maxTableSize = scanner.nextInt();
+		
+		lowerTableSize = maxTableSize - 1;
+		
+		//printing out errors if applicable
+		if(maxTableSize <= 0 || people <= 0 || people < maxTableSize)
+		{
+			System.out.println("A invalid number was inputted somewhere, check to make sure that no values are negative or there are not less people than a single table can hold.");
+			found = true;
+		}
+		
+		
+		//Find Solution by checking to see if people - j amount of smaller tables works, increasing j by one every time we loop
+		while(!found)
+		{
+			
+			k = ( people - (lowerTableSize*j) ) / maxTableSize;
+			
+			//variable to see if the loop has reached a real solution (not a decimal number)
+			check = (people - (lowerTableSize*j) ) % maxTableSize;
+			
+			
+			
+			
+				//If the answer won't make sense, stop the program and print out a message stating it
+				if(k <= 0)
+				{
+					found = true;
+					System.out.println("Sorry! There is no way that this program can get an optimal seating arrangement!");
+				}	
+			
+				
+				
+				/*If the equation has reached a value that leaves no remainder (meaning that enough tables of j exist 
+				 * for the remaining people divided into k tables to work) then print out the result.					*/
+				if(check == 0 )
+				{
+					found = true;
+					System.out.println("There are " + k + " tables of " + maxTableSize + " and there are " + j + " tables of " + lowerTableSize);
+				}	
+			
+			//increase j to add more tables of lowerTableSize value before the loop goes back up to see if this time we have enough	
+			j = j + 1;
+		}	
+		
+		
+		scanner.close();
+	}
+
+}
