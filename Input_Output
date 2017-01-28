@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import java.util.*;
+
+public class Input_Output {
+
+	public Input_Output() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		// Prompt the user first name 
+        System.out.print( "Type First Name: " );
+
+        // Read a line of text from the user.
+        String Name = scanner.nextLine();
+        
+     // Prompt the user initial
+        System.out.print( "Type Initial: " );
+        
+     // Read a line of text from the user.
+        String Initial = scanner.nextLine();
+        
+     // Prompt the user last name 
+        System.out.print( "Type Last Name: " );
+        
+     // Read a line of text from the user.
+        String LastName = scanner.nextLine();
+
+        // Display the input back to the user.
+        System.out.println( Name + " " + Initial + "." + " " + LastName);
+        
+        scanner.close();
+
+	}
+	
+}
