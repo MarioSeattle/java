@@ -1,0 +1,51 @@
+import java.util.Scanner;
+import java.util.*;
+
+public class Input_Output {
+
+	public Input_Output() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	//declare object of string class
+		String inputString;
+		
+		//String object: reads until new line separator 
+		String lineSeparator = System.getProperty("line.separator");
+		
+		//String object: sets the string division delimiter 
+		String delims = "[!]";
+		
+		//Create a scanner object for scanner class 
+		//declare object of scanner class 
+		Scanner scanObject = new Scanner(System.in);
+		
+		//Reads until new line include blank spaces 
+		//read input from the user 
+		scanObject.useDelimiter(lineSeparator);
+		
+		//Prompt user from string: read and store input in
+		//input string 
+		System.out.print("Enter a sentence and include an exclamation mark(!): ");
+		inputString = scanObject.next();
+		
+		//split() method with the String class delimiter object as an argument to split the string 
+		//and store it in an array of elements 
+		//Declare a String class array object to hold both substrings 
+		String[] tokenArray = inputString.split(delims);
+		
+		//Display first subtracting 
+		System.out.println(" " + tokenArray[0]);
+		
+		//Display second sub string 
+		System.out.println(" " + tokenArray[1]);
+		
+		
+
+
+	}
+	
+}
