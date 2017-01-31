@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class Prime_Number_Ot_Not {
+	
+	//Method to check Boolean Number 
+	public boolean check (int number) 
+	{
+		//set Boolean variable to be true 
+		boolean flag = true;
+		
+		//Loop the check prime number 
+		for (int a=2; a <=number /2 ;a++)
+		{ 
+			if (number %  a == 0)
+				
+		//break the loop if the number is divisible by a
+		flag = false;
+		break;	
+				} //for loops ends here return flag value 
+		
+		return flag;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/* Write a method that returns true if its parameter is a prime number. Using this
+		 *method, write a program that repeatedly asks the user for input and displays
+		*Prime if the input is a prime number and Not Prime, otherwise. Stop the
+		*repetition when the input is a negative number. 
+		*/
+		
+		int number = 0;
+		
+		//Object for class prime 
+		Prime_Number_Ot_Not p = new Prime_Number_Ot_Not();
+		
+		//Initiate scanner read input from user 
+		Scanner year = new Scanner(System.in);
+		
+		//do while loop to repeat statement 
+		do 
+		{
+			System.out.println ("Enter number please: ");
+			number = year.nextInt();
+			
+			if (number<0)
+				System.exit(0);
+			
+			//condition to check if prime or not 
+			
+			//calling check method 
+			if (p.check(number))
+				System.out.println("Prime");
+			else 
+				System.out.println("Not a prime");
+		} while(number>0); //end of while loop  
+				
+				
+	}  //main Method ends here 
+
+}//class end here 
