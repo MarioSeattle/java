@@ -1,0 +1,52 @@
+/* Takes a Name of any Size(or any input for that matter
+ * separated by spaces and transposes it (i.e. a row to a column)
+ */
+
+import java.util.*;
+
+public class InvertName {
+
+	public static void main(String[] args){
+
+		//Input and Variables
+			try(Scanner scanner = new Scanner(System.in)){;
+			
+			scanner.useDelimiter("\n"); // Set so scanner will take spaces as input and end when "enter or return" is pressed
+			System.out.println("Enter name:");
+			
+			String sentence = scanner.next();
+			String[] words = sentence.split("\\s");//Allows for single user input, splits at spaces
+														
+		
+			boolean endOfName;
+			int row = 0;
+		//Main Body
+			do {
+				endOfName = true;
+				
+				char[] output = new char[words.length * 2]; // .length * 2 prevents out of bound error and primes enough space
+				int column = 0;
+				
+				for (String word : words) {
+					char c;
+					
+					if (row < word.length()) {
+						c = word.charAt(row);
+						endOfName = false;
+					} 
+					else {
+						c = ' ';
+					}					
+					output[column++] = c;  //Priming Output for row to print
+					output[column++] = ' ';//Adding a space to make more readable
+				}
+				if (!endOfName) {
+					System.out.println(output);
+				}
+				row++;
+			}
+			while (!endOfName);
+		}
+	}
+
+}
