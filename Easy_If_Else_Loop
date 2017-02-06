@@ -1,0 +1,30 @@
+import java.util.*;
+
+class test {
+    
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        int age; 
+        System.out.print("What is your age ? ");
+        age = scanner.nextInt();
+        
+        if (age <15 )
+        {
+            System.out.print("Too young!");
+            
+        }
+        else 
+        {
+            System.out.print("Welcome!");
+
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
+}
