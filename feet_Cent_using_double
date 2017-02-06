@@ -12,15 +12,15 @@ class test {
         //Promp to let the user know what to do
         System.out.println("Enter a velue in centimeters: ");
         //Reads and stores input in variables cent
-        cent = sc.Next.double();
+        cent = sc.nextDouble();
         
         //convert centimeters to feet and inches 
         feet = cent * 0.0328084;
         inch = cent * 0.393701;
         
         //Dsiplay the results 
-        System.out.println("\nthe value in feet is: \n " + feet);
-        System.out.println("\n te value in inch is \n" + inch);
+        System.out.println("\nThe value in feet is: \n " + feet);
+        System.out.println("\nThe value in inch is \n" + inch);
     }
     
     
