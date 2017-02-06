@@ -1,0 +1,24 @@
+import java.util.*;
+
+class test {
+    
+    public static void main(String[] args) 
+    {
+   //declare variables
+    Double cel, far;
+        //Use this to take inpout from Keyboar
+        //Class Scanner and Object sc
+        Scanner sc = new Scanner(System.in);
+        //Promp to let the user know what to do
+        System.out.println("Enter temperature in celcious: ");
+        //Reads and stores input in variables cent
+        cel = sc.nextDouble();
+        
+     far = 1.8 * cel + 32;
+        //Dsiplay the results 
+        System.out.println("Dsiplay temperature in Farenhait" + " " + far);
+    }
+    
+    
+    
+}
