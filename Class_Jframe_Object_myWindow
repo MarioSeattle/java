@@ -1,0 +1,17 @@
+import javax.swing.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    
+        JFrame myWindow;
+        myWindow = new JFrame();
+        
+        myWindow.setSize(200, 300);
+        myWindow.setTitle("Hello World");
+        myWindow.setVisible(true);
+
+	}
+	
+}
