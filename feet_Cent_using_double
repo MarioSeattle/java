@@ -1,0 +1,28 @@
+import java.util.*;
+
+class test {
+    
+    public static void main(String[] args) 
+    {
+   //declare variables
+    Double feet, inch, cent;
+        //Use this to take inpout from Keyboar
+        //Class Scanner and Object sc
+        Scanner sc = new Scanner(System.in);
+        //Promp to let the user know what to do
+        System.out.println("Enter a velue in centimeters: ");
+        //Reads and stores input in variables cent
+        cent = sc.Next.double();
+        
+        //convert centimeters to feet and inches 
+        feet = cent * 0.0328084;
+        inch = cent * 0.393701;
+        
+        //Dsiplay the results 
+        System.out.println("\nthe value in feet is: \n " + feet);
+        System.out.println("\n te value in inch is \n" + inch);
+    }
+    
+    
+    
+}
