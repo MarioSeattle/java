@@ -1,0 +1,24 @@
+import java.util.*;
+
+class test {
+    
+    public static void main(String[] args) 
+    {
+   //declare variables
+    Double weight, calories;
+        //Use this to take inpout from Keyboar
+        //Class Scanner and Object sc
+        Scanner sc = new Scanner(System.in);
+        //Promp to let the user know what to do
+        System.out.println("Enter your weight: ");
+        //Reads and stores input in variables cent
+        weight = sc.nextDouble();
+        
+     calories = weight * 19;
+        //Dsiplay the results 
+        System.out.println("You need to consume" + " " + calories + " " + "daily");
+    }
+    
+    
+    
+}
