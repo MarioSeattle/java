@@ -1,0 +1,19 @@
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+        String text;
+        
+        text = "expresso";
+        
+        //Mehod subtracting specific characters
+        
+        System.out.print(text.substring(2, 7));
+
+
+     
+
+	}
+	
+}
