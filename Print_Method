@@ -1,0 +1,16 @@
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    System.out.print("Shopping list:\n  ");
+    System.out.print("    Apple \n");
+    System.out.print("    Banana \n");
+    System.out.print("    Low fat Yougurt \n");
+
+
+
+     
+
+	}
+	
+}
