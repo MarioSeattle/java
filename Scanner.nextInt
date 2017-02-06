@@ -1,0 +1,19 @@
+import java.util.*;
+
+class test {
+    
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter height in ft & in (e.g. 5 11): ");
+        int ft = scanner.nextInt( );
+        int in = scanner.nextInt( );
+        System.out.print("Your high is: " + ft + " " + in);
+
+        
+    }
+    
+    
+    
+    
+}
