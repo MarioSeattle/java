@@ -1,0 +1,33 @@
+import java.util.*;
+
+class test {
+    
+    public static void main(String[] args) 
+    {
+   //declare variables
+ double weight, mer, ven, jup, sat;
+        //read from user
+        System.out.println("What is your wieght on Earth ?"  );
+        //Ask user for input 
+        Scanner sc = new Scanner(System.in);
+        //Reads and stores the values 
+        weight = sc.nextDouble();
+        
+        //diferent planets 
+        mer = weight * 0.4;
+        ven = weight * 0.9;
+        jup = weight * 2.5;
+        sat = weight * 1.1;
+        
+        //display results
+                System.out.println("user mer " + " " + mer);
+                System.out.println("user ven " + " " + ven);
+                System.out.println("user jup " + " " + jup);
+                System.out.println("user sat " + " " + sat);
+
+       
+    }
+    
+    
+    
+}
