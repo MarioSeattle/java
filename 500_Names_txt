@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+
+public class Person {
+    
+  
+    public static void main(String[] args) {
+        
+        File file = new File("500names.txt");
+        
+        try (Scanner scanner = new Scanner(file).useDelimiter("\n")){
+                    
+            while(scanner.hasNext()){ //Loops until all names are scanned
+                System.out.print(scanner.next()); //Prints each name
+            }
+        }
+        catch (java.io.FileNotFoundException err){
+            err.printStackTrace();
+        }
+    }
+
+}
